@@ -4,21 +4,34 @@ A write-up of how I set up my home server along with key definitions. I also add
 
 ## Key Terms
 
-UGREEN NASync - UGREENS's line of Network Attached Storage (NAS) devices. A NAS is a small always-on computer built to hold several drives and share their storage over your network. You can use it as a private cloud, a backup target, and a media server.
+Container - a light weight, isolated environment that runs an application along with everything it needs: code, libraries, and settings.
+
+Docker - a platform for building, shipping, and running applications inside containers. 
+
+Dynamic Host Configuration Protocol (DHCP) - is a network protocol that automatically assigns IP addresses and other network settings to devices when they connect. A DHCP server hands out an IP address, subnet mask, default gateway, DNS server addresses.
 
 Hard Disk Drive (HDD) - traditional storage that saves data on spinning magnetic platters. Slower and noisier than an SSD, but much cheaper per terabyte, which makes it the standard choice for bulk storage like media libraries and backups. 
 
-Solid State Drive (SSD) - Storage with no moving parts that uses flash memory. Much faster and quieter than an HDD, but more expensive per terabyte. In a NAS, it is often used as a cache or for apps and databases that need quick access.
+Network File System (NFS) - A Linux/Unix-native file-sharing protocol. It can be a little faster and simpler than samba between Linux machines, but SMB is better supported by default on a NAS.
+
+Port Mapping - is a router setting that directs incoming network traffic on a specific port to a specific device inside your private network
 
 Random Access Memory (RAM) - short term memory ten system uses for whatever it is working on. More RAM helps when running several apps, containers, or services at once. It is not storage, and its contents are cleared when the power goes off.
 
+Router - A device that connects your local network to other networks, mainly the internet. It hands out IP addresses to your devices DHCP, decides where traffic should go, and usually includes a firewall.
+
+Samba (SMB) - a free software that lets Linux/Unix computers share files and printers with Windows computers on a network. It implements Microsoft's SMB (Server Message Block) protocol, so a Linux machine running Samba can show up in Windows File Explorer as a regular shared folder, and Linux can also access Windows shares. It can even act as a Windows-style domain controller, handling logins for a network.
+
+Server - a computer (or a program running on one) that provides a service or resources to other computers, called clients, over a network. The client sends a request, and a server responds.
+
+Solid State Drive (SSD) - Storage with no moving parts that uses flash memory. Much faster and quieter than an HDD, but more expensive per terabyte. In a NAS, it is often used as a cache or for apps and databases that need quick access.
+
 Switch - A device that connects multiple wired devices (laptop, NAS, TV, etc.) on the same local network so they can talk to each other. It forwards data only to the device it is meant for.
 
-Router - A device that connects your local network to other networks, mainly the internet. It hands out IP addresses to your devices (DHCP // add DHCP as a term please), decides where traffic should go, and usually includes a firewall.
+UGREEN NASync - UGREENS's line of Network Attached Storage (NAS) devices. A NAS is a small always-on computer built to hold several drives and share their storage over your network. You can use it as a private cloud, a backup target, and a media server.
 
-Network File System (NFS) - A Linux/Unix-native file-sharing protocol. It can be a little faster and simpler than samba between Linux machines, but SMB is better supported by default on a NAS.
+Volume Mapping - is a way to connect a folder on your host computer to a folder inside a container, usually in Docker. Anything written in one location appears in the other.
 
-Mount - Linux's way of making a drive or network share appear as a normal folder. I mount my NAS shares under '/mnt/nas/' (Kelli did you do this already or no ?), so they behave like any other directory.
 
 ## Questions I had:
 
@@ -45,5 +58,8 @@ A switch only provides the physical lanes. It allows data packets to physically 
 2. Turn over the NAS and install the SSD, and RAM inside the bottom panel
 3. Connect the NAS to the switch with an Ethernet cable
 4. Power on and find the NAS on the network
-5. Create users and shared folders, and enable SMB in the NAS settings// chris comment ( we have not done that  yet / also descibe what SMB does on a plain levvel )
+5. Create users and shared folders, and enable Samba (SMB) in the NAS settings
 6. Reserve a fixed IP for the NAS in the router //chris comment (we have not done this yet)
+
+One Issue:
+1. When I installed one of the hard drives, Linux didn't detect it as working, so I returned the defective hard drive and bought a replacement. The new drive worked fine.
