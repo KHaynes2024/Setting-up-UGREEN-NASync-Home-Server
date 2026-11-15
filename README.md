@@ -1,4 +1,4 @@
-# Setting-up-NAS-Server
+# Setting my own NAS
 
 <img width="860" height="516" alt="NAS-Diagram" src="https://github.com/user-attachments/assets/92ab25f1-4377-48cd-b6e6-89a40be78d5b" />
 
