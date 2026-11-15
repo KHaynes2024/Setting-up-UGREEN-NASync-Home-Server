@@ -4,6 +4,23 @@
 
 A write-up of how I set up my NAS along with what I learned after completing the set up.
 
+One Issue:
+1. When I installed one of the hard drives, the NAS didn't detect it as working, so I returned the defective hard drive and bought a replacement. The new drive worked fine.
+
+## My set up
+
+| Component | Details |
+| HDDs | [4 drives / 12TB] | <img width="200" height="200" alt="20261003_140512" src="https://github.com/user-attachments/assets/7c55e6f3-4348-4402-8f00-3f1194ecd3b0" />
+
+
+| SSDs | [1 / 2TB] | <img width="200" height="200" alt="20261003_153140" src="https://github.com/user-attachments/assets/237e1df6-150e-4625-a513-14096a0f818e" />
+
+
+| RAM | 32GB | <img width="200" height="200" alt="20261003_140720" src="https://github.com/user-attachments/assets/074280f0-7165-4c60-b15b-4a2554ff3bc1" />
+| Switch | tp-link 5-Port Gigabit / speed | <img width="200" height="200" alt="20261003_140631" src="https://github.com/user-attachments/assets/aa50afdf-b4f7-4f20-83a3-c38b6b533ee3" />
+
+| laptop | Linux Mint [version] ([Cinnamon/MATE/Xfce]) |  <img width="200" height="200" alt="linux-mint" src="https://github.com/user-attachments/assets/f5b5ae0e-8d7a-474b-9d4a-3373b81e1933" />
+
 ## Setup Steps:
 
 1. Install the HDDs into the NAS bays
@@ -15,21 +32,6 @@ A write-up of how I set up my NAS along with what I learned after completing the
 
 One Issue:
 1. When I installed one of the hard drives, the NAS didn't detect it as working, so I returned the defective hard drive and bought a replacement. The new drive worked fine.
-
-## My set up
-
-| Component | Details |
-| HDDs | [4 drives / 12TB] | <img width="3000" height="1389" alt="20261003_140512" src="https://github.com/user-attachments/assets/7c55e6f3-4348-4402-8f00-3f1194ecd3b0" />
-
-
-| SSDs | [1 / 2TB] | <img width="3000" height="4000" alt="20261003_153140" src="https://github.com/user-attachments/assets/237e1df6-150e-4625-a513-14096a0f818e" />
-
-
-| RAM | 32GB | <img width="4000" height="3000" alt="20261003_140720" src="https://github.com/user-attachments/assets/074280f0-7165-4c60-b15b-4a2554ff3bc1" />
-| Switch | tp-link 5-Port Gigabit / speed | <img width="3000" height="4000" alt="20261003_140631" src="https://github.com/user-attachments/assets/aa50afdf-b4f7-4f20-83a3-c38b6b533ee3" />
-
-| laptop | Linux Mint [version] ([Cinnamon/MATE/Xfce]) |  <img width="512" height="512" alt="linux-mint" src="https://github.com/user-attachments/assets/f5b5ae0e-8d7a-474b-9d4a-3373b81e1933" />
-
 
 ## Key Terms I learned about while doing this project :
 
