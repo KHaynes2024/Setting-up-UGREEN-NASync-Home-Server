@@ -19,7 +19,8 @@ One Issue:
 ## My set up
 
 | Component | Details |
-| HDDs | [4 drives / 12TB] | <img width="4000" height="3000" alt="20261003_140720" src="https://github.com/user-attachments/assets/074280f0-7165-4c60-b15b-4a2554ff3bc1" />
+| HDDs | [4 drives / 12TB] | <img width="3000" height="1389" alt="20261003_140512" src="https://github.com/user-attachments/assets/7c55e6f3-4348-4402-8f00-3f1194ecd3b0" />
+
 
 | SSDs | [1 / 2TB] | <img width="3000" height="4000" alt="20261003_153140" src="https://github.com/user-attachments/assets/237e1df6-150e-4625-a513-14096a0f818e" />
 
